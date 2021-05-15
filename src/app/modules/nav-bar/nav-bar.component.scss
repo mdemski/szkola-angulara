@@ -1,0 +1,30 @@
+.content-container {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+  }
+  
+.mat-sidenav {
+    width: 220px;
+}
+
+.routeIcon {
+  margin-right: 10px;
+  font-size: 16pt;
+}
+  
+.menu-item-text {
+  font-size: 10pt;
+}
+
+button.menu-button {
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,20 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [opened]="opened">
+            <mat-nav-list>
+                    <a mat-list-item *ngFor="let item of menuItems"  class="menu-list-item"  (click)="selectMenu(item)">
+                            <mat-icon class="routeIcon">{{ item.icon }}</mat-icon>
+                            <span class="menu-item-text">{{ item.name }}</span>
+                    </a>
+            </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+            <div class="content-container">
+                    <!-- TODO: Use ndc-dynamic in app.component with Output() event from this one -->
+                    <ng-container [ngSwitch]="selectedItemName">
+                                <app-dashboard *ngSwitchCase="itemNames.dashboard"></app-dashboard>
+                                <app-todo-list *ngSwitchCase="itemNames.todo"></app-todo-list>
+                                <app-user-info *ngSwitchCase="itemNames.userInfo"></app-user-info>
+                    </ng-container>
+            </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

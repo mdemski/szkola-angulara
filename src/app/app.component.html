@@ -1,1 +1,8 @@
-<p>{{title}}</p>
+<mat-toolbar color="primary">
+        <button (click)="toggleMenu()" mat-icon-button class="menu-button">
+                <mat-icon>menu</mat-icon>
+        </button>
+        <span>Szkoła Angulara Projekt</span>
+</mat-toolbar>
+
+<app-nav-bar [opened]="opened"></app-nav-bar>

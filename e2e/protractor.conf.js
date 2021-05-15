@@ -16,13 +16,14 @@ exports.config = {
     browserName: 'chrome'
   },
   directConnect: true,
-  SELENIUM_PROMISE_MANAGER: false,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
-    print: function() {}
+    print: function () {
+      // this is intentional
+    }
   },
   onPrepare() {
     require('ts-node').register({

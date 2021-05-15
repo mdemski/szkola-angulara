@@ -1,0 +1,27 @@
+.subgoal-card {
+        width: 30%;
+        margin: 0 5px;
+    }
+
+.main-goal-remove-btn {
+        height: 30px;
+        width: 30px;
+        background-color: crimson;
+        .mat-icon {
+                font-size: 25px;
+                height: 30px;
+    width: 25px;
+    margin-top: -7px;
+        }
+        margin-right: 10px;
+       
+}
+
+.main-goal-edit-btn {
+        height: 30px;
+        width: 30px;
+        .mat-icon {
+                font-size: 15px;
+        }
+    }
+
